@@ -5,7 +5,7 @@
  * @param {number} target
  * @return {number[]}
  */
-var twoSum = function (nums, target) {
+var twoSum1 = function (nums, target) {
   if (nums.length == 2) {
     return [0, 1];
   }
@@ -26,7 +26,7 @@ var twoSum = function (nums, target) {
  * @param {number} target
  * @return {number[]}
  */
-var twoSum = function (nums, target) {
+var twoSum2 = function (nums, target) {
   var results = [];
   // try sums:  0,1 0,2 0,3  1,2 1,3  2,3
   for (var i = 0; i < nums.length - 1; i++) {
@@ -47,7 +47,7 @@ var twoSum = function (nums, target) {
  * @param {number} target
  * @return {number[]}
  */
-var twoSum = function (nums, target) {
+var twoSum3 = function (nums, target) {
   let dic = {};
   for (let i = 0; i < nums.length; i++) {
     if (target - nums[i] in dic) {
